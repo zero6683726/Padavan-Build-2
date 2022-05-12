@@ -31,4 +31,5 @@ sed -i "s/192.168.2/$lan_ip/g" $default_path/defaults.h
 
 #echo "集成 KMS 激活服务器"
 #sed -i "s/CONFIG_FIRMWARE_INCLUDE_VLMCSD=n/CONFIG_FIRMWARE_INCLUDE_VLMCSD=y/g" $config
-
+echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=n" >> $m.config #smartdns
+echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=n" >> $m.config
